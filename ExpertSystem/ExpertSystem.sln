@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpertSystem", "ExpertSystem\ExpertSystem.csproj", "{3787FFE2-5B2E-432A-A348-A99529A526F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuzzyInference", "FuzzyInference\FuzzyInference.csproj", "{94A3E3EA-C196-4BDF-812E-1F615C1C905E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3787FFE2-5B2E-432A-A348-A99529A526F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3787FFE2-5B2E-432A-A348-A99529A526F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3787FFE2-5B2E-432A-A348-A99529A526F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3787FFE2-5B2E-432A-A348-A99529A526F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94A3E3EA-C196-4BDF-812E-1F615C1C905E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94A3E3EA-C196-4BDF-812E-1F615C1C905E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94A3E3EA-C196-4BDF-812E-1F615C1C905E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94A3E3EA-C196-4BDF-812E-1F615C1C905E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {812624BD-8EC4-4B22-A8E5-D5945B4ACC38}
+	EndGlobalSection
+EndGlobal
