@@ -10,19 +10,11 @@ using System.Windows.Forms;
 
 namespace ExpertSystem
 {
-    public partial class Form1 : Form
+    public partial class Ekspert : Form
     {
-        Ekspert ex;
-        public Form1()
+        public Ekspert()
         {
             InitializeComponent();
-            ex = new Ekspert();
-        }
-
-        private void rozpocznijJakoEkspertToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            ex.Show();
-
         }
     }
 }
