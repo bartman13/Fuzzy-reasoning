@@ -8,7 +8,7 @@ namespace FuzzyInference
 {
     public class Database
     {
-        public List<Fact> Facts { get; set; }
+        private List<Fact> Facts;
 
         public Database()
         {
@@ -95,6 +95,27 @@ namespace FuzzyInference
                     new Course(ExamName.ENGLISH, ExamLevel.ADVANCED, 0.25)
                     })
             };
+        }
+
+        public void Create(Fact fact)
+        {
+            Facts.Add(fact);
+        }
+
+        public List<Fact> Read()
+        {
+            return Facts;
+        }
+
+        public void Update(Fact oldFact, Fact newFact)
+        {
+            Facts.Remove(oldFact);
+            Facts.Add(newFact);
+        }
+
+        public void Delete (Fact fact)
+        {
+            Facts.Remove(fact);
         }
     }
 }
