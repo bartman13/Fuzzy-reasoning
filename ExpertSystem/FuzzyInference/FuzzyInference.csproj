@@ -42,13 +42,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Chance.cs" />
+    <Compile Include="Enums\Chance.cs" />
+    <Compile Include="Enums\CollegePrestige.cs" />
     <Compile Include="Colleges.cs" />
     <Compile Include="Course.cs" />
+    <Compile Include="Enums\ExamsGrade.cs" />
     <Compile Include="Fact.cs" />
     <Compile Include="Database.cs" />
-    <Compile Include="ExamLevel.cs" />
-    <Compile Include="ExamName.cs" />
+    <Compile Include="Enums\ExamLevel.cs" />
+    <Compile Include="Enums\ExamName.cs" />
     <Compile Include="ExamResult.cs" />
     <Compile Include="FuzzifiedExamResult.cs" />
     <Compile Include="InferenceEngine.cs" />
