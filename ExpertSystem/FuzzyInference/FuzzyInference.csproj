@@ -43,7 +43,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Chance.cs" />
-    <Compile Include="Class1.cs" />
     <Compile Include="Colleges.cs" />
     <Compile Include="Course.cs" />
     <Compile Include="Fact.cs" />
@@ -51,6 +50,8 @@
     <Compile Include="ExamLevel.cs" />
     <Compile Include="ExamName.cs" />
     <Compile Include="ExamResult.cs" />
+    <Compile Include="FuzzifiedExamResult.cs" />
+    <Compile Include="InferenceEngine.cs" />
     <Compile Include="InferenceResult.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserData.cs" />

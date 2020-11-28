@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace FuzzyInference
 {
-    public class Class1
+    public class InferenceEngine
     {
+        public void Run(List<ExamResult> results)
+        {
+
+        }
     }
 }
