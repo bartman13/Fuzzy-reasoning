@@ -8,18 +8,20 @@ namespace FuzzyInference
 {
     public class InferenceEngine
     {
-        List<Rule> rules = new List<Rule>();
-
         public InferenceResult Run(List<ExamResult> results)
         {
             Database db = new Database();
 
             List<Fact> matchedFacts = db.Read().Where(x =>
             {
+                bool flag = true;
                 foreach (Course c in x.Courses)
-                    if (results.Where(y => y.ExamName == c.ExamName && y.ExamLevel == c.ExamLevel).Count() == 0)
-                        return false;
-                return true;
+                {
+                    List<ExamResult> t = results.Where(y => y.ExamName == c.ExamName && y.ExamLevel == c.ExamLevel).ToList();
+                    if (t.Count() == 0)
+                        flag = false;
+                }
+                return flag;
             }).ToList();
 
             List<FuzzifiedExamResult> fuzzifiedResults = Fuzzify(results);
@@ -60,7 +62,11 @@ namespace FuzzyInference
 
         public ExamsGrade EvaluateExams(Fact fact, List<FuzzifiedExamResult> examsResults)
         {
-
+            if (examsResults.Where(x => x.Low > 0.5).Count() > 1)
+                return ExamsGrade.Low;
+            if (examsResults.Where(x => x.Average > 0.5).Count() > 1)
+                return ExamsGrade.Average;
+            return ExamsGrade.High;
         }
 
         public CollegePrestige CalculatePrestige(double prestige)

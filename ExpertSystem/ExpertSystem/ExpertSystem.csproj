@@ -85,5 +85,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FuzzyInference\FuzzyInference.csproj">
+      <Project>{94a3e3ea-c196-4bdf-812e-1f615c1c905e}</Project>
+      <Name>FuzzyInference</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
