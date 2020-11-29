@@ -12,17 +12,33 @@ namespace ExpertSystem
 {
     public partial class Form1 : Form
     {
-        Ekspert ex;
+ 
+        User us;
+        Instrukcja ins;
         public Form1()
         {
             InitializeComponent();
-            ex = new Ekspert();
+            
+            
         }
 
         private void rozpocznijJakoEkspertToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ex.Show();
+            
+            
 
+        }
+
+        private void rozpocznijJakoUżytkwownikToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            us = new User();
+            us.Show();
+        }
+
+        private void pomocToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ins = new Instrukcja();
+            ins.Show();
         }
     }
 }

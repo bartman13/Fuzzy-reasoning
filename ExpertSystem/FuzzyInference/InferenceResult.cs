@@ -8,7 +8,7 @@ namespace FuzzyInference
 {
     public class InferenceResult
     {
-        List<(Fact, Chance)> Result { get; set; }
+        public List<(Fact, Chance)> Result { get; set; }
 
         public InferenceResult(List<(Fact, Chance)> _result)
         {

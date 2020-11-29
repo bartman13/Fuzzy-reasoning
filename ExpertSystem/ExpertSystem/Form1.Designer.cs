@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.rozpocznijJakoEkspertToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rozpocznijJakoUżytkwownikToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pomocToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
@@ -40,7 +39,6 @@
             // 
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.rozpocznijJakoEkspertToolStripMenuItem,
             this.rozpocznijJakoUżytkwownikToolStripMenuItem,
             this.pomocToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
@@ -49,24 +47,19 @@
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // rozpocznijJakoEkspertToolStripMenuItem
-            // 
-            this.rozpocznijJakoEkspertToolStripMenuItem.Name = "rozpocznijJakoEkspertToolStripMenuItem";
-            this.rozpocznijJakoEkspertToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
-            this.rozpocznijJakoEkspertToolStripMenuItem.Text = "Rozpocznij jako Ekspert";
-            this.rozpocznijJakoEkspertToolStripMenuItem.Click += new System.EventHandler(this.rozpocznijJakoEkspertToolStripMenuItem_Click);
-            // 
             // rozpocznijJakoUżytkwownikToolStripMenuItem
             // 
             this.rozpocznijJakoUżytkwownikToolStripMenuItem.Name = "rozpocznijJakoUżytkwownikToolStripMenuItem";
-            this.rozpocznijJakoUżytkwownikToolStripMenuItem.Size = new System.Drawing.Size(216, 24);
+            this.rozpocznijJakoUżytkwownikToolStripMenuItem.Size = new System.Drawing.Size(214, 24);
             this.rozpocznijJakoUżytkwownikToolStripMenuItem.Text = "Rozpocznij jako użytkwownik";
+            this.rozpocznijJakoUżytkwownikToolStripMenuItem.Click += new System.EventHandler(this.rozpocznijJakoUżytkwownikToolStripMenuItem_Click);
             // 
             // pomocToolStripMenuItem
             // 
             this.pomocToolStripMenuItem.Name = "pomocToolStripMenuItem";
-            this.pomocToolStripMenuItem.Size = new System.Drawing.Size(68, 24);
+            this.pomocToolStripMenuItem.Size = new System.Drawing.Size(66, 24);
             this.pomocToolStripMenuItem.Text = "Pomoc";
+            this.pomocToolStripMenuItem.Click += new System.EventHandler(this.pomocToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -89,7 +82,6 @@
         #endregion
 
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem rozpocznijJakoEkspertToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem rozpocznijJakoUżytkwownikToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pomocToolStripMenuItem;
     }
