@@ -19,7 +19,7 @@ namespace ExpertSystem
             {
                 new ExamResult { ExamName = ExamName.MATHEMATICS, ExamLevel = ExamLevel.ADVANCED, Result = 90 },
                 new ExamResult { ExamName = ExamName.COMPUTER_SCIENCE, ExamLevel = ExamLevel.ADVANCED, Result = 90 },
-                new ExamResult { ExamName = ExamName.ENGLISH, ExamLevel = ExamLevel.ADVANCED, Result = 60 }
+                new ExamResult { ExamName = ExamName.ENGLISH, ExamLevel = ExamLevel.ADVANCED, Result = 90 }
             };
 
             InferenceEngine engine = new InferenceEngine();
